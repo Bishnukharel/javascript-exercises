@@ -6,9 +6,32 @@ validatePIN(00004324); // false
 validatePIN('2312'); // true
 validatePin('asd123'); // false
 validatePin('000010'); // true
- */
+*/
+// if (typeof(input)!== 'string') {
+//     return false;
+// } 
+// else if(input.length !== 4 || input.length !== 6){
+//     return false;
+// }
+// else if (input.indexOf('.') === 1){
+//     return false;
+// }
+// return input.length >= 4
 
 function validatePIN(input) {
-    if (typeof(input) !== 'string') {
-        return false;
-    } 
+    if (input.length === 4 || input.length === 6) {
+        return true
+    } else if (Number(input) === 'NaN') {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(validatePIN(00004324)); // false
+console.log(validatePIN('2312')); // true
+console.log(validatePIN('asd123')); // false
+console.log(validatePIN(1234)); // false
+console.log(validatePIN('000010')); // true
+
+//a = 'ab12'
+//console.log(Number(a));

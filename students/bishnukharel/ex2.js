@@ -9,21 +9,20 @@ console.log(first([7, 9, 0, -2],6)); // [7, 9, 0, -2]
 console.log(first([7, 9, 0, -2],-3)); // [] 
 
 */
-function first (input1,input2){
-}
-if(!Array.isArray(input1)){
-    return;
-}
-if (input===[] );
-else if (typof(input2)==='undefined'|| input===null){
-    return(input1[0];
-}else if (input.length<=input2){
-    return input1;
-}
-else if (input2>0){
-    return [];
-}
-else{
-    return inout1.splice (0,input2);
-}
-}
+function first(input1, input2) {
+    if (!Array.isArray(input1)) {
+        return;
+    }
+    if (input === []) {
+        return [];
+    } else if (typof(input2) === 'undefined' || input === null) {
+        return (input1[0]);
+        }
+        else if (input.length <= input2) {
+            return input;
+        } else if (input2 > 0) {
+            return [];
+        } else {
+            return input1.splice(0, input2);
+        }
+    }
