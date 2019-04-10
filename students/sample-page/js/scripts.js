@@ -12,6 +12,7 @@ console.log('This line will be call right before we start invoking the sampleFun
 sampleFunction(); // we are invoking the function right here
 
 function nextFunction() {
+    
     var i = 10;
     console.log('This is the value of i right before the while line below');
     while (i--) {

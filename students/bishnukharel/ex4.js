@@ -19,13 +19,12 @@ validatePin('000010'); // true
 // return input.length >= 4
 
 function validatePIN(input) {
-    if (input.length === 4 || input.length === 6) {
-        return true
-    } else if (Number(input) === 'NaN') {
+    if (input.length === 4 || input.length === 6 && !isNaN(input)) {
         return true
     } else {
         return false
     }
+   
 }
 console.log(validatePIN(00004324)); // false
 console.log(validatePIN('2312')); // true
@@ -33,5 +32,6 @@ console.log(validatePIN('asd123')); // false
 console.log(validatePIN(1234)); // false
 console.log(validatePIN('000010')); // true
 
-//a = 'ab12'
-//console.log(Number(a));
+// a = 'ab12'
+// console.log(Number(a));
+// console.log(isNaN(a))
